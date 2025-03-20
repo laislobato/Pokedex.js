@@ -45,7 +45,7 @@ const todosTipos = [
     { nome: 'Terrestre', cor: 'rgba(221, 187, 85, 0.75)' },
     { nome: 'Venenoso', cor: 'rgba(170, 85, 153, 0.75)' },
     { nome: 'Voador', cor: 'rgba(136, 153, 255, 0.75)' }
-]
+];
 
 function getTipo(name) {
     const index = allTypes.indexOf(name);
@@ -85,22 +85,29 @@ function capitalizeFirstLetter(string) {
 }
 
 function carousel(sprites) {
-    return `<div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+    return `<div id="carouselExampleAutoplaying"
+        class="carousel slide"
+        data-bs-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item active">
-                    <img src="${sprites.other['official-artwork'].front_default}" class="d-block w-100" alt="Padrão">
+                    <img src="${sprites.other['official-artwork'].front_default}"
+                    class="d-block w-100" alt="Padrão">
                     </div>
                     <div class="carousel-item">
-                    <img src="${sprites.other['official-artwork'].front_shiny}" class="d-block w-100" alt="Shiny">
+                    <img src="${sprites.other['official-artwork'].front_shiny}"
+                    class="d-block w-100" alt="Shiny">
                     </div>
                 </div>
                 <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="visually-hidden">Previous</span>
                 </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
+                <button class="carousel-control-next" type="button"
+                    data-bs-target="#carouselExampleAutoplaying"
+                    data-bs-slide="next">
+                        <span class="carousel-control-next-icon"
+                        aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
                 </button>
         </div>`
 }
